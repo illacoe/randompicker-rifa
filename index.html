@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="./assets/script/script.js"></script>
+  <link href="./assets/style/styles.css" rel="stylesheet">
+  <title>Sorteo MSL</title>
+</head>
+<body>
+  <audio id="rollSound" src="./assets/music/roll.mp3" preload="auto"></audio>
+
+  <audio id="myAudio" src="./assets/music/music.mp3" preload="auto" loop ></audio>
+  <audio id="wrongSound1" src="./assets/music/lose/1.mp3" preload="auto" ></audio>
+  <audio id="wrongSound2" src="./assets/music/lose/2.mp3" preload="auto" ></audio>
+  <audio id="wrongSound3" src="./assets/music/lose/3.mp3" preload="auto" ></audio>
+
+  <audio id="correctSound1" src="./assets/music/win/1.mp3" preload="auto" ></audio>
+  <audio id="correctSound2" src="./assets/music/win/2.mp3" preload="auto" ></audio>
+  <audio id="correctSound3" src="./assets/music/win/3.mp3" preload="auto" ></audio>
+
+   
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="question-text"></div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+
+    <div id="winners-table" class="hide">
+      <div class="titleWinners">Ganadores</div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Comencemos</button>
+      <button id="next-btn" class="next-btn btn hide">Siguiente</button>
+      <button id="showR-btn" class="next-btn btn hide">Ver Resultados</button>
+    </div>
+  </div>
+</body>
+</html>
